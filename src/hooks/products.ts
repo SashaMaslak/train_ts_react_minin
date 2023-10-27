@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import axios, { AxiosError } from "axios"
 import { IProduct } from "../models"
 
-export function useProducts(product: IProduct) {
+export function useProducts() {
   const [products, setProducts] = useState<IProduct[]>([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
